@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.adbro_main_page {
+  background-color: #c4c4c4;
+  width: 903px;
+  height: 422px;
+  display: flex;
+  justify-content: center;
+}
+
+.adbro_header_block {
+  &_background {
+    margin-top: 327px;
+    width: 700px;
+    height: 95px;
+  }
+}
+
+.adbro_fish_left {
+  position: absolute;
+  z-index: 2;
+  margin-left: 121px;
+  margin-top: -103px;
+
+  &_middle {
+    position: absolute;
+    margin-left: 217px;
+    margin-top: -112px;
+  }
+}
+
+.adbro_fish_right {
+  position: absolute;
+  margin-left: 514px;
+  margin-top: -115px;
+  z-index: 2;
+
+  &_middle {
+    position: absolute;
+    margin-left: 414px;
+    margin-top: -123px;
+  }
+}
+
+.adbro_fish_left_animation{
+  animation:slide-br .5s cubic-bezier(.25,.46,.45,.94) 1000 alternate both
+}
+@keyframes slide-br{0%{transform:translateY(0) translateX(0)}100%{transform:translateY(15px) translateX(15px)}}
+
+.adbro_fish_left_middle_animation{
+  animation:slide-tr .5s cubic-bezier(.25,.46,.45,.94) 1000 alternate both
+}
+@keyframes slide-tr{0%{transform:translateY(0) translateX(0)}100%{transform:translateY(-15px) translateX(15px)}}
+
+.adbro_fish_right_middle_animation{
+  animation:slide-tl .5s cubic-bezier(.25,.46,.45,.94) 1000 alternate-reverse both
+}
+@keyframes slide-tl{0%{transform:translateY(0) translateX(0)}100%{transform:translateY(-15px) translateX(-15px)}}
+
+.adbro_fish_right_animation{
+  animation:slide-bl .5s cubic-bezier(.25,.46,.45,.94) 1000 alternate both
+}
+@keyframes slide-bl{0%{transform:translateY(0) translateX(0)}100%{transform:translateY(15px) translateX(-15px)}}
+
+
+.adbro_bottle_left {
+  position: absolute;
+  margin-left: 312px;
+  margin-top: -143px;
+}
+
+.adbro_bottle_right {
+  position: absolute;
+  margin-left: 350px;
+  margin-top: -143px;
+}
+
+.adbro_header_block_text {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #000;
+  background: #fff;
+  width: 226px;
+  height: 37px;
+  margin-left: 80px;
+  margin-top: -57px;
+}
+
+.adbro_header_text {
+  color: #caaa6c;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.adbro_logo {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  margin-left: 416px;
+  margin-top: -65px;
+}
+
+.adbro_boat {
+  position: absolute;
+  margin-left: 482px;
+  margin-top: -87px;
+}
+
+.adbro_buy_btn {
+  position: absolute;
+  cursor: pointer;
+  width: 78px;
+  height: 22px;
+  border-radius: 20px;
+  background: #fff;
+  border: none;
+  color: #ff0f12;
+  text-align: center;
+  font-size: 11px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 509px;
+  margin-top: -40px;
+}
+
+.adbro_animation_close_btn {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1000
+    alternate both;
+  animation: slide-right 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1000
+    alternate both;
+}
+
+@keyframes slide-right{0%{transform:translateX(0)}100%{transform:translateX(15px)}}
+
+.adbro_close_btn {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  margin-left: 606px;
+  margin-top: -104px;
+  filter: alpha(Opacity=50);
+  opacity: 0.7;
+}
+
+.adbro_info_btn {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  margin-left: 606px;
+  margin-top: -77px;
+  filter: alpha(Opacity=50);
+  opacity: 0.7;
+}
+
+.adbro_content_block {
+  width: 903px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.adbro_content_cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 77px;
+  gap: 10px;
+  border: 0.3px solid #DEDEDE;
+  width: 781px;
+  height: 299px;
+  align-items: center;
+  justify-content: center;
+}
+.adbro_content_cards_animation{
+  animation:slide-left .4s cubic-bezier(.25,.46,.45,.94) .8s 2 alternate both
+}
+@keyframes slide-left{0%{transform:translateX(0)}100%{transform:translateX(-25px)}}
+
+.adbro_content_card {
+  box-sizing: border-box;
+  width: 180px;
+  height: 270px;
+  border-radius: 3px;
+  border: 0.36px solid #c2c2c2;
+  box-shadow: 0px 2px 4px #c2c2c2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adbro_content_card_img {
+  width: 180px;
+  height: 180px;
+  border-radius: 3px 3px 0 0;
+}
+
+.adbro_content_card_text {
+  color: #404040;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 162px;
+  height: 43px;
+}
+
+.adbro_content_card_btn {
+  cursor: pointer;
+  color: #404040;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 0.86px solid #c2c2c2;
+  background: #f6f6f6;
+  width: 162px;
+  height: 37.179px;
+}
